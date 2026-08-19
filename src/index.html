@@ -12,7 +12,7 @@
 <body class="min-h-screen bg-gray-900 flex items-center justify-center px-4">
 
     <!-- Main Box -->
-    <div class="w-full max-w-md p-0.5 rounded-xl bg-linear-to-r from-red-500 via-indigo-500 to-sky-400">
+    <div class="w-full max-w-md p-0.5 rounded-xl bg-linear-to-r from-red-500 to-blue-400">
 
         <!-- Login Card -->
         <div class="bg-slate-900 rounded-xl p-6">
@@ -66,31 +66,23 @@
 
                 </div>
 
-                <!-- Remember Me -->
-                <label>
-
-                    <input type="checkbox" name="remember">
-
-                    Remember me
-
-                </label>
-
 
                 <!-- Login Button -->
-                <button type="submit">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                    Login
+                <button type="submit"
+                    class="w-full h-11 mt-6 bg-green-500 hover:bg-green-600 rounded-md text-white font-semibold">
+                    <i class="fa-solid fa-check mr-1"></i>
+                    Success!
                 </button>
 
             </form>
 
 
             <!-- Sign Up -->
-            <p>
+            <p class="text-center text-sm text-gray-400 mt-5">
 
                 Don't have an account?
 
-                <a href="#">
+                <a href="#" class="text-indigo-400">
                     Sign Up
                 </a>
 
@@ -98,29 +90,31 @@
 
 
             <!-- Divider -->
-            <div>
+            <div class="flex items-center gap-3 my-6">
 
-                <div></div>
+                <div class="h-px bg-gray-700 flex-1"></div>
 
-                <span>
+                <span class="text-xs text-gray-500">
                     Or continue with
                 </span>
 
-                <div></div>
+                <div class="h-px bg-gray-700 flex-1"></div>
 
             </div>
 
 
             <!-- Social Login -->
-            <div>
+            <div class="flex gap-3">
 
-                <button type="button">
-                    <i class="fa-brands fa-google"></i>
+                <button type="button"
+                    class="flex-1 h-10 border border-slate-700 rounded-md text-sm text-white hover:bg-slate-800">
+                    <i class="fa-brands fa-google mr-2"></i>
                     Google
                 </button>
 
-                <button type="button">
-                    <i class="fa-brands fa-facebook-f"></i>
+                <button type="button"
+                    class="flex-1 h-10 border border-slate-700 rounded-md text-sm text-white hover:bg-slate-800">
+                    <i class="fa-brands fa-facebook-f mr-2"></i>
                     Facebook
                 </button>
 
